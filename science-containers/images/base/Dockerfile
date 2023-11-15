@@ -6,7 +6,9 @@ USER root
 
 WORKDIR /tmp
 
-RUN apt-get update --yes --quiet --fix-missing \
+RUN apt-get update --yes --quiet --fix-missing\
+    # - apt-get upgrade is run to patch known vulnerabilities in apt-get packages as the ubuntu base image is rebuilt too seldom sometimes (less than once a month)
+    && apt-get upgrade --yes \
     && apt-get install --yes --quiet acl \
         bzip2 \
         curl \

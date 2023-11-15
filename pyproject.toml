@@ -15,6 +15,14 @@ mkdocs-material = "^9.4"
 mkdocstrings-python = "^1.7"
 mkdocs-git-revision-date-localized-plugin = "^1.2"
 
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "semver"
+version_provider = "poetry"
+update_changelog_on_bump = true
+major_version_zero = true
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
