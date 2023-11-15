@@ -2,7 +2,7 @@
 
 ### Feat
 
-- **science-containers**: Added two new images, base-terminal and base-notebook, that build on top of the base image
+- **science-containers**: Added two new images, base-terminal and base-notebook, that build on top of the base image and deleted scicon directory. All the images can be found in the science-containers directory.
 - **base Image**: debugged micromamba installation process
 - **build**: add quotes around python versions
 - **ci**: added pre-commit ci action
